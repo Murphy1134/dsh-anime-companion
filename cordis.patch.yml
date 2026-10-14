@@ -1,0 +1,25 @@
+# dsh-anime-companion bundle patch
+# 将本插件作为一行插入 DSH（Cordis）插件树。
+# 安装：dsh plugin --profile web add <本目录绝对路径或包名>
+#
+# 说明：
+# - id 必须稳定且全局唯一；后续叠加层（用户自己的 cordis.patch.yml）
+#   用它来覆盖配置或禁用本插件。
+# - name 必须与 package.json 的 name 一致（包根说明符），
+#   ClientModuleRegistry 才能据此解析 exports["./client"]。
+# - 本插件的用户设置（角色/主题/语音…）不落在这里，而是由 Host 半
+#   写入 settings.yaml，见 src/index.ts。
+- insert:
+    - id: dsh-anime-companion
+      name: 'dsh-anime-companion'
+      # 可选：Cordis 插件 Config（运行时合并进 apply 的第二参）。
+      # 这里仅给出默认值，真正的用户偏好走 settings.yaml。
+      config:
+        enabled: true
+        # 仅在 DSH 官方接口演进时需要手动调整的开关：
+        # legacySettings 为 true 时强制走 settings.register(ns, schema) 老接口；
+        # 留空（null）则按能力探测自动选择。
+        legacySettings: null
+        # 本地 Piper TTS 可执行文件路径（为空则该引擎自动跳过）。
+        piperBin: ''
+        piperVoiceDir: ''

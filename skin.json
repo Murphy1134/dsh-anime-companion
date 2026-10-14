@@ -1,0 +1,35 @@
+{
+  "$schema": "dsh-anime-companion/skin@1",
+  "id": "dsh-anime-companion",
+  "version": "0.1.0",
+  "name": "DSH 动漫伴侣",
+  "description": "可换主题、可换形象、会朗读的 DSH 动漫伴侣。全部本地完成，零 token。",
+  "themes": [
+    {
+      "id": "example",
+      "name": "示例 · 樱粉夜行",
+      "description": "一套 light/dark 双值的 --dsw-alias-* 语义 token 主题示例。",
+      "entry": "themes/example/theme.json",
+      "style": "themes/example/style.css"
+    }
+  ],
+  "models": [
+    {
+      "id": "example",
+      "name": "示例 · PNG 轻量形象",
+      "kind": "png",
+      "description": "无需 Live2D 运行时的 PNG 轻量占位形象，用于零依赖验证挂载/拖拽/开关。",
+      "manifest": "models/example/manifest.json"
+    }
+  ],
+  "boot": {
+    "splash": true,
+    "loadingText": [
+      "正在召唤动漫伴侣…",
+      "为你整理裙摆中…",
+      "调和主题色…",
+      "校准口型与语音…"
+    ]
+  },
+  "assetBase": "/api/anime-companion/assets"
+}
