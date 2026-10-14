@@ -1,0 +1,42 @@
+{
+  "id": "example",
+  "name": "示例 · 樱粉夜行",
+  "description": "浅色为樱花暖白，深色为紫夜粉樱。只覆盖语义 alias 层（--dsw-alias-*），未列出的 token 沿用官方默认值。",
+  "version": "1.0.0",
+  "tokens": {
+    "light": {
+      "--dsw-alias-bg-body": "#fdf5f8",
+      "--dsw-alias-bg-elevated": "#ffffff",
+      "--dsw-alias-surface-1": "#ffffff",
+      "--dsw-alias-surface-2": "#fbeaf2",
+      "--dsw-alias-surface-3": "#f7d9e8",
+      "--dsw-alias-border": "#eed0df",
+      "--dsw-alias-border-strong": "#e2b3cc",
+      "--dsw-alias-label": "#3d2c39",
+      "--dsw-alias-label-secondary": "#8a6b7d",
+      "--dsw-alias-label-tertiary": "#b394a6",
+      "--dsw-alias-brand": "#e86a9e",
+      "--dsw-alias-brand-hover": "#d94f88",
+      "--dsw-alias-accent": "#7c6cf0",
+      "--dsw-alias-scrollbar-bg-l2": "#f3d9e6",
+      "--dsw-alias-scrollbar-hover-l2": "#e7b9d2"
+    },
+    "dark": {
+      "--dsw-alias-bg-body": "#14101d",
+      "--dsw-alias-bg-elevated": "#1d1729",
+      "--dsw-alias-surface-1": "#1e1829",
+      "--dsw-alias-surface-2": "#251e34",
+      "--dsw-alias-surface-3": "#2e2540",
+      "--dsw-alias-border": "#362b48",
+      "--dsw-alias-border-strong": "#473860",
+      "--dsw-alias-label": "#f3ecf6",
+      "--dsw-alias-label-secondary": "#ab9db8",
+      "--dsw-alias-label-tertiary": "#7d6f8c",
+      "--dsw-alias-brand": "#ff8fc0",
+      "--dsw-alias-brand-hover": "#ff6fb0",
+      "--dsw-alias-accent": "#a391ff",
+      "--dsw-alias-scrollbar-bg-l2": "#2c2238",
+      "--dsw-alias-scrollbar-hover-l2": "#40325a"
+    }
+  }
+}

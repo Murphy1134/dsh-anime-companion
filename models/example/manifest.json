@@ -1,0 +1,16 @@
+{
+  "id": "example",
+  "name": "示例 · 樱小樱（轻量形象）",
+  "kind": "png",
+  "description": "零依赖轻量形象（SVG 位图，<img> 渲染）。用于在未安装 Cubism Core 时验证挂载、拖拽、开关与口型联动。需要真正的 Live2D 时，把 kind 改为 live2d 并提供 model 字段与 .model3.json。",
+  "image": "avatar.svg",
+  "expressions": {
+    "idle": "avatar.svg",
+    "thinking": "avatar-thinking.svg",
+    "search": "avatar-thinking.svg",
+    "generating": "avatar.svg",
+    "done": "avatar-happy.svg",
+    "failed": "avatar.svg"
+  },
+  "scale": 1
+}
