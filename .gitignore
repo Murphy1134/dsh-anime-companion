@@ -1,0 +1,6 @@
+node_modules/
+lib/
+*.tsbuildinfo
+.DS_Store
+# Live2D Cubism Core（受许可约束，用户自备，不入库）
+vendor/live2dcubismcore.min.js
